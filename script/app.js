@@ -39,8 +39,15 @@ let myShow3 = {
 // console.log(myShow);
 
 let shows = [myShow, myShow2, myShow3];
+let empty = "";
 for (let i = 0; i < shows.length; i++) {
-    paragraph.innerHTML += "<strong>" + shows[i].title + "</strong></br>" + shows[i].broadcaster + "</br>" + shows[i].numberOfEpisodes + "</br>" + shows[i].aired + "</br></br></br></br>";
+    if(shows[i].aired===true) {
+        empty = "Oui";
+    }
+    else {
+        empty = "Non";
+    }
+    paragraph.innerHTML += "<strong>" + shows[i].title + "</strong></br>" + shows[i].broadcaster + "</br>" + shows[i].numberOfEpisodes + "</br>" + empty + "</br></br></br></br>";
 }
 
 let btnReveal = document.querySelector(".btnReveal");
