@@ -41,7 +41,7 @@ let myShow3 = {
 let shows = [myShow, myShow2, myShow3];
 let empty = "";
 for (let i = 0; i < shows.length; i++) {
-    if(shows[i].aired===true) {
+    if(shows[i].aired === true) {
         empty = "Oui";
     }
     else {
