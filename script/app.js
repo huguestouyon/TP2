@@ -45,9 +45,16 @@ for (let i = 0; i < shows.length; i++) {
 
 let btnReveal = document.querySelector(".btnReveal");
 let frame = document.querySelector(".series-frame");
+let btnHide = document.querySelector(".btnHide");
 
 function reveal() {
     frame.setAttribute("class", "series-frame reveal");
 };
 
+function hide() {
+    frame.setAttribute("class", "series-frame hide");
+};
+
 btnReveal.addEventListener("click", reveal);
+btnHide.addEventListener("click", hide);
+
